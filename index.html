@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smartCRM</title>
+  <link rel="website icon" type png href="IMAGE/LOGO.png">
+  <link rel="stylesheet" href="style.css">
+ <meta property="og:title" content="smartCRM">
+ <!--news-->
+ <meta property="og:description" content="SmartCRM streamlines customer interactions and boosts business efficiency.">
+ <meta property="og:url" content="https://smartcrm.netlify.app/">
+ <meta property="og:image" content="IMAGE/LOGO.png">
+ <meta property="og:type" content="website">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+  <link href="remixicon/remixicon.css" rel="stylesheet">
+  <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+
+
+
+</head>
+
+<body >
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a style="text-decoration: none;"
+            href="contact.html">contact@example.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+212 6816518</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex">
+        <a href="contact.html" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="contact.html" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="contact.html" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="contact.html" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- ======= Top Bar ======= -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img id="logo" src="IMAGE/LOGO-BLACK.png"  class="img-fluid"></a>
+        <h1><a href="index.html">SMART<span>CRM</span></a></h1>
+      </div>
+      <!-- .navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto" href="pricing.html">Princing</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+          <li><a class="nav-link scrollto "  style="padding-right: 20px; padding-left: 20px; margin-left: 10px; border-radius: 10px; color: var(--primary-color-white-white); background-color: var(--primary-color); " href="login.html">login</a></li>
+          <i class="bi bi-moon-stars-fill" id="mode-toggle" onclick="toggleMode()"></i>
+          <i class="bi bi-brightness-highl" id="mode-toggle" onclick="toggleMode()"></i>    
+        </ul>
+       
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- ======= Header ======= -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(IMAGE/dd.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>smartCRM</span></h2>
+                <p class="animate__animated animate__fadeInUp">Explore our Smart CRM platform, where every interaction
+                  counts. Dive into personalized engagement and streamlined communication. Let's transform your customer
+                  relationships together.</p>
+                <a href="https://en.wikipedia.org/wiki/Customer_relationship_management"
+                  class="btn-get-started scrollto animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(IMAGE/x2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">What Smart CRM is?</h2>
+                <p class="animate__animated animate__fadeInUp">Smart CRM is your intelligent solution for streamlining
+                  customer relationships and boosting business growth through advanced automation and insightful
+                  analytics. Say hello to personalized engagement and seamless communication with Smart CRM..</p>
+                <a href="https://en.wikipedia.org/wiki/Customer_relationship_management"
+                  class="btn-get-started scrollto animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(IMAGE/x3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Unlock Your Business Potential with Smart CRM</h2>
+                <p class="animate__animated animate__adeInUp">Transform the way you manage customer relationships and
+                  supercharge your business growth with Smart CRM. Explore our innovative platform designed to
+                  streamline communication, personalize engagement, and provide actionable insights , empowering you to
+                  unlock your business's full potential..</p>
+                <a href="https://en.wikipedia.org/wiki/Customer_relationship_management"
+                  class="btn-get-started scrollto animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a style="text-decoration: none;" class="carousel-control-prev" href="#heroCarousel" role="button"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon ri-arrow-left-line" aria-hidden="true"></span>
+        </a>
+
+        <a style="text-decoration: none;" class="carousel-control-next" href="#heroCarousel" role="button"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon ri-arrow-right-line" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- ======= Hero Section ======= -->
+
+  <!-- ======= about us ======= -->
+  <section id="features" class="features" data-aos="fade-up" style="background-color: var(--primary-color-two);">
+      <section class="p-0">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header pb-0">
+            <span>About us</span>
+            <h2>About us</h2>
+  
+          </div>
+  
+        </div>
+      </section>
+      <div class="container pb-5 pt-5" style="background-color: var(--primary-color-two);">
+  
+        <div class="e">
+          <div class="row content ">
+            <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
+              <img id="features-1" src="IMAGE/features-1.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
+              <h3 style="color: var(--primary-color);  font-weight: 700;">Our Promise to You</h3>
+              <p class="fst-italic">At Smart CRM, we promise to deliver exceptional service and innovative solutions
+                tailored to your needs. Our
+                commitment to putting customers first, embracing innovation, and ensuring reliability sets us apart.
+              </p>
+              <ul>
+                <li class="features-para"><i class="bi bi-check"></i>
+                  Customer-Centric Approach: Your satisfaction is our priority. We listen to your needs and tailor our
+                  solutions to meet
+                  them, ensuring you always get the support you deserve.</li>
+                <li class="features-para"><i class="bi bi-check"></i> Continuous Innovation: We're always looking for ways to improve. Our team
+                  stays ahead of the curve, leveraging the
+                  latest technology to bring you cutting-edge CRM solutions.</li>
+                <li class="features-para"><i class="bi bi-check"></i>
+                  Reliability and Trust: You can rely on us. Our platform is built on trust, backed by a team of experts
+                  dedicated to
+                  providing you with reliable and trustworthy service.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="e2">
+          <div class="row content ">
+            <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+              <img id="features-2" src="IMAGE/features-2.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+              <h3 style="color: var(--primary-color);  font-weight: 700;">Our Beliefs</h3>
+              <p class="fst-italic">We stand for honesty, transparency, and responsibility. These beliefs shape our work,
+                earning trust, fostering positivity, and ensuring steady progress.</p>
+              <p class="features-para">At Smart CRM, our beliefs are our compass. We value honesty, always choosing what's right for our
+                customers and team. We're open about what we do, building trust and understanding. We take ownership of
+                our actions, learning from mistakes, and getting better. These beliefs create a culture of trust and
+                excellence, helping us serve you better and grow together.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="e3">
+          <div class="row content ">
+            <div class="col-md-5" data-aos="fade-right">
+              <img id="features-3" src="IMAGE/features-3.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 pt-5" data-aos="fade-left">
+              <h3 style="color:  var(--primary-color); font-weight: 700;">Shaping the Future Together</h3>
+              <p class="features-para">At Smart CRM, we're shaping the future of business by empowering organizations of all sizes. Our vision
+                is simple: to
+                help you build stronger connections with your customers and achieve long-term success.</p>
+              <ul>
+                <li class="features-para"><i class="bi bi-check"></i> Empowering Businesses: We're here to help you thrive. Our solutions
+                  streamline processes, drive growth, and enhance
+                  customer satisfaction, empowering you to reach your goals.</li>
+                <li class="features-para"><i class="bi bi-check"></i> Building Lasting Relationships: We believe in the power of relationships.
+                  Our tools and insights help you forge
+                  meaningful connections with your customers, fostering loyalty and trust.</li>
+                <li class="features-para"><i class="bi bi-check"></i> Driving Innovation: Innovation is in our DNA. We're committed to staying
+                  ahead of the curve, continuously evolving our
+                  platform to meet the ever-changing needs of modern businesses..</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section><!-- ======= more about ======= -->
+
+  <!-- ======= User Benefits ======= -->
+  <section id="about" class="about" style="background-color: var(--primary-color);">
+
+    <section class="p-0">
+      <div class="container p-0" data-aos="fade-up">
+
+        <div class="section-header">
+          <span style="color: rgba(255, 255, 255, 0.164);">User Benefits</span>
+          <h2 style="color: white; ">User Benefits</h2>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container">
+
+      <div class="row">
+        <div style="background-image: url(IMAGE/LOGO.png)" data-aos="fade-right"
+          class="  image col-xl-5 d-flex align-items justify-content-center justify-content-lg-start"></div>
+        <div class="col-xl-7 pt-4 pt-lg-0 d-flex align-items-stretch">
+          <div class="content d-flex flex-column justify-content-center" data-aos="fade-left">
+            <h3 class="text-capitalize">The values that we are based on</h3>
+            <p class="">
+              Unlock the full potential of your customer relationships with Smart CRM's powerful features designed to
+              streamline
+              communication, personalize engagement, and drive business growth.
+            </p>
+            <div class="row">
+              <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+                <i class="bx bx-receipt"></i>
+                <h4>Our Latest Achievements</h4>
+                <p>Stay ahead of the curve with Smart CRM's continuous updates and enhancements, ensuring
+                  you always have access to the latest features and innovations in customer relationship management.
+                </p>
+              </div>
+              <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <i class="bx bx-cube-alt"></i>
+                <h4>The Achievement Team</h4>
+                <p class="">"Benefit from dedicated support from our experienced team of CRM experts, ready to assist
+                  you every step of the way on your journey towards business success.
+                  "</p>
+              </div>
+              <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+                <i class="bx bx-images"></i>
+                <h4>The Presence of Our Services</h4>
+                <p class="">"Access Smart CRM anytime, anywhere, with our cloud-based platform, ensuring
+                  seamless integration and scalability to meet your evolving business needs."</p>
+              </div>
+              <div class="col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="400">
+                <i class="bx bx-shield"></i>
+                <h4>Our Cybersecurity</h4>
+                <p class="">"Rest easy knowing your data is safe and secure with Smart CRM's robust cybersecurity
+                  measures, including encryption, regular audits, and strict access controls."</p>
+              </div>
+            </div>
+
+
+
+            <section id="horizontal-pricing" class="horizontal-pricing pt-0 pb-2">
+              <div class="container  p-0 d-flex align-items-center  justify-content-center pt-3" data-aos="fade-up">
+
+
+                <div class="row gy-4 pricing-item featured p-0 m-0 d-flex align-items-center  justify-content-center"
+                  style=" width: min-content;" data-aos="fade-up" data-aos-delay="200">
+                  <div class="col-lg-3 d-flex align-items-center justify-content-center p-0">
+                    <div class="text-center"><a href="https://www.elearning-formationpro.com/UNIVERSCRM/index2.php#ajax/dashboard.php" id="liveToastBtn" class="buy-btn" >DEMO</a></div>
+                  </div>
+                </div><!-- End Pricing Item -->
+
+              </div>
+
+            </section>
+
+
+
+
+
+          </div><!-- End .content-->
+        </div>
+      </div>
+
+    </div>
+  </section> <!-- ======= about ======= -->
+
+   <!-- ======= Galerie ======= -->
+  <div class="galerie">
+  <section class="p-0" style="background-color: var(--primary-color-two);">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header pb-0">
+          <span>Galerie</span>
+          <h2>Galerie</h2>
+
+        </div>
+
+      </div>
+ <div id="carouselExampleIndicators" style="  height: 80vh;";   class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" style="  height: 80vh; ";  >
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="IMAGE/Capture d’écran 2024-06-02 030150.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="IMAGE/Capture d’écran 2024-06-02 030244.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="IMAGE/Capture d’écran 2024-06-02 032908.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div></div><!-- ======= Galerie ======= -->
+
+   <!-- ======= Blogs ======= -->
+   <section class="category-section" style="padding: 0; background-color: var(--primary-color-two); " >
+  
+  <section class="p-0 pt-5" style="background-color: var(--primary-color-two);">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header pb-0">
+        <span>Blogs</span>
+        <h2>Blogs</h2>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="container" data-aos="fade-up">
+
+   
+
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="post-entry-1 lg">
+          <a href="#"><img src="IMAGE/office-workers-using-finance-graphs.jpg" alt="" class="img-fluid"></a>
+          <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+          <h2><a href="#" style="color: var(--primary-color-black-white);">1 Manage Clients with New Smart CRM Technology</a></h2>
+          <p class="mb-4 d-block" style="color: var(--primary-color-black-white);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil tempore odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis officia nemo, eos quae cumque. Accusamus fugiat architecto rerum animi atque eveniet, quo, praesentium dignissimos</p>
+
+          <div class="d-flex align-items-center author">
+            <div class="photo"><img src="IMAGE/testimonials/testimonials-4.jpg" alt="" class="img-fluid"></div>
+            <div class="name">
+              <h3 class="m-0 p-0" style="color: var(--primary-color-black-white);">Esther Howard</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-entry-1 border-bottom">
+          <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+          <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">Boost Customer Loyalty with Smart CRM (keep the Pimples Away)</a></h2>
+          <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+        </div>
+
+        <div class="post-entry-1">
+          <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+          <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">10 Unlock Engagement with our Better CRM Tools</a></h2>
+          <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+        </div>
+
+      </div>
+
+      <div class="col-lg-8">
+        <div class="row g-5">
+          <div class="col-lg-4 border-start custom-border">
+            <div class="post-entry-1">
+              <a href="#"><img src="IMAGE/call-center-8754751.jpg" alt="" class="img-fluid"></a>
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2><a href="#" style="color: var(--primary-color-black-white);">Let’s Get Back to Work, New York</a></h2>
+            </div>
+            <div class="post-entry-1">
+              <a href="#"><img src="IMAGE/typing-849806_1920.jpg" alt="" class="img-fluid"></a>
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 17th '22</span></div>
+              <h2><a href="#" style="color: var(--primary-color-black-white);">How to Avoid Distraction and Stay Focused During Video Calls?</a></h2>
+            </div>
+            <div class="post-entry-1">
+              <a href="#"><img src="IMAGE/customer-relationship-management-concept.jpg" alt="" class="img-fluid"></a>
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Mar 15th '22</span></div>
+              <h2><a href="#" style="color: var(--primary-color-black-white);">Why Craigslist Tampa Is One of The Most Interesting Places On the Web?</a></h2>
+            </div>
+          </div>
+          <div class="col-lg-4 border-start custom-border">
+            <div class="post-entry-1">
+              <a href="#"><img id="LOGO-BLACK22" src="IMAGE/LOGO-BLACK22.png" alt="" class="img-fluid"></a>
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2><a href="#" style="color: var(--primary-color-black-white);">6 Easy Steps To Create Your Own Cute Merch For Instagram</a></h2>
+            </div>
+            <div class="post-entry-1">
+              <a href="#"><img src="IMAGE/ai-generated-8764343.jpg" alt="" class="img-fluid"></a>
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Mar 1st '22</span></div>
+              <h2><a href="#" style="color: var(--primary-color-black-white);">10 Life-Changing Hacks Every Working Mom Should Know</a></h2>
+            </div>
+            <div class="post-entry-1">
+              <a href="#"><img src="IMAGE/istockphoto-943557580-612x612.jpg" alt="" class="img-fluid"></a>
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2><a href="#" style="color: var(--primary-color-black-white);">5 Great Startup Tips for Female Founders</a></h2>
+            </div>
+          </div>
+          <div class="col-lg-4">
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">How to Avoid Distraction and Stay Focused During Video Calls?</a></h2>
+              <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</a></h2>
+              <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">9 Half-up/half-down Hairstyles for Long and Medium Hair</a></h2>
+              <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">Life Insurance And Pregnancy: A Working Mom’s Guide</a></h2>
+              <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">The Best Homemade Masks for Face (keep the Pimples Away)</a></h2>
+              <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date" style="color: var(--blogs-small-title);">Lifestyle</span> <span class="mx-1">&bullet;</span> <span style="color: var(--blogs-small-title);">Jul 5th '22</span></div>
+              <h2 class="mb-2"><a href="#" style="color: var(--primary-color-black-white);">10 Life-Changing Hacks Every Working Mom Should Know</a></h2>
+              <span class="author mb-3 d-block" style="color: var(--primary-color-black-white);">Jenny Wilson</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End .row -->
+  </div>
+   </section><!-- Blogs -->
+
+  <!-- ======= Pricing Section ======= -->
+  <section class="pricing pt-0"  style="background-color: var(--white-movve);">
+    <div class="container " data-aos="fade-up">
+
+      <div class="section-header">
+        <span style="color: var(--back-title-color2);">Pricing </span>
+        <h2>Pricing </h2>
+
+      </div>
+
+      <div class="row gy-4 ">
+        <div class="col-lg-4 q" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-item">
+            <h3>Starter Plan</h3>
+            <h4><sup>$</sup>29<span> / month</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> User-friendly interface for easy navigation</li>
+              <li><i class="bi bi-check"></i> Access to basic reporting and analytics tools</li>
+              <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
+              <li class="na"><i class="bi bi-x"></i> <span> Ability to customize email templates and workflows</span></li>
+              <li><i class="bi bi-check"></i> 24/7 access to online knowledge base for self-help</li>
+            </ul>
+            <a href="login.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div> <!-- End Pricing Item -->
+
+        <div class="col-lg-4 f" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-item featured">
+            <h3>Professional Plan</h3>
+            <h4><sup>$</sup>79<span> / month</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> Advanced segmentation for targeted marketing campaigns</li>
+              <li><i class="bi bi-check"></i> Dedicated account manager for personalized support</li>
+              <li><i class="bi bi-check"></i> Integration with CRM API for seamless data synchronization</li>
+              <li><i class="bi bi-check"></i> Comprehensive training resources and webinars</li>
+              <li><i class="bi bi-check"></i> Automated lead scoring to prioritize sales opportunities</li>
+            </ul>
+            <a href="login.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div> <!-- End Pricing Item -->
+
+        <div class="col-lg-4 r" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing-item">
+            <h3>Enterprise Plan</h3>
+            <h4><sup>$</sup>149<span> / month</span></h4>
+            <ul>
+              <li><i class="bi bi-check"></i> White-labeling option for branding customization</li>
+              <li><i class="bi bi-check"></i> Advanced security features, including data encryption</li>
+              <li><i class="bi bi-check"></i> Multi-channel customer support integration</li>
+              <li><i class="bi bi-check"></i> Predictive analytics for forecasting and trend analysis</li>
+              <li><i class="bi bi-check"></i> Custom development options for tailored solutions</li>
+            </ul>
+            <a href="login.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div> <!-- End Pricing Item -->
+
+      </div>
+
+    </div>
+  </section> <!-- ======= Pricing Section ======= -->
+
+  <!-- ======= sign in ======= -->
+ <section id="sign in" class="si vh-60 pt-0 pb-0" style="background-color: var(--primary-color-two); height: fit-content;">
+
+    <section class="p-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header pb-0">
+          <span>sign in</span>
+          <h2>sign in</h2>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container h-100" >
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-5 col-xl-11 mt-0 mb-5" style="width: 100%; margin-left: 12% ; 
+        margin-right: 12%; margin-top: 5%; margin-bottom: 5%; ">
+          <div class="card text-black" style="  border-radius: 25px;">
+            <div class="card-body p-0">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+
+
+                  <form class="" action="ModeleUser.php" method="post">
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label pt-2 fw-medium ms-2" for="form3Example1c">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label fw-medium ms-2" for="form3Example3c">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label fw-medium ms-2" for="form3Example3c">Phone</label>
+                        <input type="text" id="phone" name="phone" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label fw-medium ms-2" for="form3Example4c">Password</label>
+                        <input type="password" id="password" name="password" class="form-control" />
+                      </div>
+                    </div>
+
+                    
+
+                    <div class="form-check d-flex ms-3 mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements in Terms of service
+                      </label>
+                    </div>
+
+                    <section id="horizontal-pricing" class="horizontal-pricing pt-0 pb-4">
+                      <div class="container p-0 d-flex align-items-center  justify-content-center" data-aos="fade-up">
+
+                        <div class="row  pricing-item p-0 m-0 d-flex align-items-center  justify-content-center"
+                          style=" width: min-content;" data-aos="fade-up" data-aos-delay="300">
+
+                          <div class="col-lg-3 d-flex align-items-center  justify-content-center p-0 ">
+                            <div class="text-center"><button  id="BtnAjout" class="buy-btn">Register</button></div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </section>
+
+                  </form>
+
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                  <img src="IMAGE/draw1.webp" class="img-fluid" style="border-radius: 20px;" alt="Sample image">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!-- ======= sign in ======= -->
+
+  <!-- ======= contact ======= -->
+  <section id="contact" class="contact section-bg" style="background-color: var(--blue--black); padding-top: 0; ">
+    <section class="p-0">
+      <div class="container p-0" data-aos="fade-up">
+
+        <div class="section-header">
+          <span style="color: rgba(255, 255, 255, 0.164);">contact</span>
+          <h2 style="color: white; ">contact</h2>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="row">
+
+      <div class="col-lg-6 g" >
+
+        <div class="row" >
+          <div class="col-md-12" >
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com<br>contact@example.com</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-md-0">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name2" class="form-control " id="name2" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email2" class="form-control" name="email" id="email2" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject2" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+
+    </div>
+
+    </div>
+  </section><!-- ======= contact ======= -->
+
+  <!-- ======= footer ======= -->
+  <footer id="footer" style="background-color:9290C3;">
+
+    <div class="footer-top " style="background-color: #1B1A55;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Our Address</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html" style="text-decoration-line: none;">Home</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html" style="text-decoration-line: none;">About
+                  us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="pricing.html"
+                  style="text-decoration-line: none;">Pricing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html"
+                  style="text-decoration-line: none;">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="login.html" style="text-decoration-line: none;">Login</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="text-decoration-line: none;">Web Design</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="text-decoration-line: none;">Web
+                  Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="text-decoration-line: none;">Product
+                  Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="text-decoration-line: none;">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="text-decoration-line: none;">Graphic Design</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <div class="social-links mt-3">
+              <a href="contact.html" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="contact.html" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="contact.html" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="contact.html" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="contact.html" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>tahri</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by SAADTAHRIMade
+      </div>
+    </div>
+  </footer><!-- ======= footer ======= -->
+
+  <!-- ======= up button ======= -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= up button ======= -->
+
+
+  <!-- ======= toasts ======= -->
+  <div aria-live="polite" aria-atomic="true"
+    class="position-relative top-0 end-0 p-3 toast-container position-fixed bottom-0 end-0 p-3   ">
+
+    <div id="liveToast" class="toast text-bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+
+        <div class="spinner-grow text-danger " role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+
+        <strong class="me-auto ms-2">Admin message</strong>
+        <small>Now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Sorry!...the DEMO not able for the moment
+      </div>
+    </div>
+  </div><!-- ======= toasts ======= -->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="main.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
